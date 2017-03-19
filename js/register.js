@@ -53,7 +53,7 @@ window.onload = function() {
 				}else{
 					console.log("Full");
 					this.className = "no-error-input";
-					this.style.borderColor = "#F57C00";
+					this.style.borderColor = "#0288D1";
 					this.parentElement.getElementsByClassName("err")[0].style.display = "none";
 					this.parentElement.getElementsByClassName("succ")[0].style.display = "block";
 				}
@@ -74,7 +74,7 @@ window.onload = function() {
 			}else{
 				console.log("Full");
 				this.className = "no-error-input";
-				this.style.borderColor = "#F57C00";
+				this.style.borderColor = "#0288D1";
 				this.parentElement.getElementsByClassName("sel")[0].style.display = "none";
 				this.parentElement.getElementsByClassName("err")[0].style.display = "none";
 				this.parentElement.getElementsByClassName("succ")[0].style.display = "block";
@@ -101,14 +101,14 @@ function checkMail(input_val, elem, type){
 				}else{
 					console.log("Email is not Registered");
 					elem.getElementsByTagName("input")[0].className = "no-error-input";
-					elem.getElementsByTagName("input")[0].style.borderColor = "#F57C00";
+					elem.getElementsByTagName("input")[0].style.borderColor = "#0288D1";
 					elem.getElementsByClassName("succ")[0].style.display = "block";
 				}
 			}else{
 				if(req.responseText == "true"){
 					console.log("Email is Registered!");
 					elem.getElementsByTagName("input")[0].className = "no-error-input";
-					elem.getElementsByTagName("input")[0].style.borderColor = "#F57C00";
+					elem.getElementsByTagName("input")[0].style.borderColor = "#0288D1";
 					elem.getElementsByClassName("succ")[0].style.display = "block";
 				}else{
 					console.log("Email is not Registered");
